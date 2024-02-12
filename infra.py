@@ -1,3 +1,8 @@
+import pandas as pd 
+
+# Charger le fichier CSV 
+df = pd.read_csv('reseau_en_arbre.csv')
+
 class Infra:
 
     def __init__(self, infra_id, infra_type, longueur):
@@ -14,3 +19,6 @@ class Infra:
         Difficulty(infra) = longueur / number of houses it connects
         """
         return self.longueur / num_houses_connected
+    
+
+
